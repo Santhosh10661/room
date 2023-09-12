@@ -146,7 +146,7 @@ a:hover {
   background-color: var(--VeryDark-Gray);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .container-fluid {
     padding: 0;
   }
@@ -243,8 +243,8 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .row-3 {
-    display: flex;
+  .menu{
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
