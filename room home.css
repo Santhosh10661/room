@@ -1,0 +1,268 @@
+:root {
+  --DarkGray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --VeryDark-Gray: hsl(0, 0%, 27%);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.moblieImg {
+  display: none;
+}
+.mobfloat {
+  display: none;
+}
+.con-mob {
+  display: none;
+}
+.floating {
+  position: absolute;
+  top: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em 3em;
+  height: 50px;
+}
+ul {
+  margin: 0;
+  justify-content: space-around;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+  color: var(--White);
+  height: 100%;
+}
+li {
+  cursor: pointer;
+}
+a {
+  color: var(--White);
+  text-transform: lowercase;
+  text-decoration: none;
+  height: 100%;
+  padding-bottom: 8px;
+}
+a:hover {
+  color: var(--White);
+  border-bottom: 2px solid white;
+}
+.imgscroll {
+  padding-right: 0;
+}
+.content-scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.con-desk {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.para-1,
+.para-2,
+.para-3 {
+  padding: 2.5em 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3em 0em;
+}
+.p1-head,
+.p2-head,
+.p3-head {
+  font-weight: 700;
+  line-height: 1em;
+}
+.p1-para,
+.p2-para,
+.p3-para {
+  font-size: 16px;
+  color: var(--DarkGray);
+  font-weight: 400;
+}
+.p1-shop,
+.p2-shop,
+.p3-shop {
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0em;
+}
+.about-head {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.about-head div {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+.about-para {
+  font-size: 14px;
+  color: var(--DarkGray);
+  font-weight: 400;
+}
+.arrow-box {
+  margin: 0x;
+  height: 50px;
+  display: flex;
+  align-self: first baseline;
+  background-color: var(--Black);
+  width: 22%;
+}
+.arrow {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.arrow-pre,
+.arrow-nxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow-pre:hover,
+.arrow-nxt:hover {
+  background-color: var(--VeryDark-Gray);
+}
+
+@media (max-width: 375px) {
+  .container-fluid {
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+  }
+  .imgscroll {
+    padding: 0;
+  }
+  .floating {
+    display: none;
+  }
+  .mobfloat {
+    display: flex;
+    position: absolute;
+    top: 6%;
+    z-index: 1;
+    justify-content: space-between;
+    margin: 0 1.5em;
+  }
+  .desktopImg {
+    display: none;
+  }
+  .con-desk {
+    display: none;
+  }
+  .con-mob {
+    display: flex;
+  }
+  .para-1,
+  .para-2,
+  .para-3 {
+    padding: 2.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0em;
+  }
+  .p1-head,
+  .p2-head,
+  .p3-head {
+    font-weight: 700;
+    line-height: 1em;
+  }
+  .p1-para,
+  .p2-para,
+  .p3-para {
+    font-size: 14px;
+    color: var(--DarkGray);
+    font-weight: 400;
+  }
+  .p1-shop,
+  .p2-shop,
+  .p3-shop {
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    font-weight: 700;
+    cursor: default;
+  }
+  .content-scroll {
+    padding: 0;
+  }
+  .arrow-box {
+    display: none;
+  }
+  .row-2 img {
+    padding: 0;
+  }
+  .about {
+    padding: 2.1em;
+  }
+  .about-head {
+    justify-content: stretch;
+  }
+  .about-head div {
+    font-size: 14px;
+    justify-content: space-evenly;
+  }
+  .moblieImg {
+    display: flex;
+    position: relative;
+  }
+  .moblie-arrow-box {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 35%;
+  }
+  .arrow-pre-m,
+  .arrow-nxt-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row-3 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(0, 0%, 0%, 25%);
+    height: 100vh;
+  }
+  .menuBar {
+    display: flex;
+    background-color: var(--White);
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 2.5em 0.5em;
+  }
+  .menu a {
+    padding: 0;
+    color: var(--Black);
+  }
+}
